@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package boletin6_3;
+
+/**
+ *
+ * @author dam1
+ */
+public class Circulo {
+
+    final private double PI = 3.14;
+    private double radio;
+
+    public Circulo() {
+    }
+
+    public Circulo(double radio) {
+        this.radio = radio;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+
+    public double calcularArea() {
+        double potenciaR = Math.pow(radio, 2);
+
+        double area = PI * potenciaR;
+        return area;
+    }
+
+    public double calcularLongitud() {
+        double longitud = 2 * PI * radio;
+
+        return longitud;
+    }
+
+}
